@@ -14,9 +14,15 @@
   font-variation-settings:"GRAD" 0;
 }
 
+.space-grotesk-groteskfont {
+  font-family: "Space Grotesk";
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 
 body{
-    /* background-color: black; */
     background: linear-gradient(#1A1A1A, #565555);
     margin: 0;
 }
@@ -35,12 +41,22 @@ img {
   }
   
 
+header{
+  position: sticky;
+  top: 0;
+}
+
 nav{
-    background-color:#647CD4;
-    display: flex;
+  background: rgba(255, 255, 255, 0);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);    display: flex;
     justify-content: space-around;
     height: 10vh;
     align-items: center;
+    
 
 }
 
@@ -63,7 +79,7 @@ nav a::before, footer a::before {
   transition: transform .3s ease-in-out;
 }
 
-nav a:hover::before, footer a:hover::before {
+nav a:hover::before, nav a:focus::before, footer a:focus::before, footer a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
@@ -100,14 +116,13 @@ h1{
     text-align: center;
     font-size: 6rem;
     margin-bottom: -0.5rem;
-    /* font-family: Orbitron; */
     font-family: 'Heading1';
 
     color: white;
 }
 
 p, ul{
-  font-family: 'Montserrat';
+  font-family: 'Open Sans', sans-serif;
   color: white;
   font-size: 1.5rem;
 }
@@ -153,7 +168,7 @@ p, ul{
 }
 
 h2{
-    font-family: 'Arial';
+    font-family: 'Inter';
     color: white;
     font-weight: bold;
     font-size: 4rem;
@@ -193,7 +208,7 @@ h3{
 
     border-style: solid;
     border-radius: 2.813rem;
-    padding: 2rem 0rem 2rem 3rem;
+    padding: 2rem 2rem 2rem 2rem;
     margin: auto;
     background-color: rgb(47, 45, 45);
     color: white;
@@ -228,6 +243,7 @@ h3{
   }
 
 
+
   .project a{
     width: 8vw;
     padding: 0.5rem;
@@ -245,7 +261,7 @@ h3{
   }
 
   footer {
-    background-color:#647CD4;
+    background-color:#504e4e;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -277,7 +293,6 @@ h3{
   
   footer a{
     font-family: Helvetica, sans-serif;
-    /* align-self: center; */
     font-weight: normal;
 
   }
@@ -291,12 +306,11 @@ h3{
     margin-bottom: 2rem;
 
   }
-  footer h4{
+  footer h3{
     color: white;
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 1.5rem;
-    /* margin: 0; */
   }
 
   .orbitron-font {
@@ -316,8 +330,6 @@ h3{
 .about{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* border-style: solid;
-  border-color: white; */
   text-align: center;
   
 }
@@ -330,23 +342,37 @@ h3{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 2rem;
+  gap: 3vw;
   margin-bottom: 2rem;
+  justify-items: center;
+
 }
 
 .final-images{
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr;
+  
   gap: 2rem;
+  justify-items: center;
   
 }
+
+h4{  
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: white;
+  font-size: 1.5rem;
+}
+
 
 .final-outcome{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2rem;
+  justify-items: center;
+
   
 }
 .product-wireframe{
@@ -374,7 +400,6 @@ h3{
 
 .project p{
   grid-row: 2/span 1;
-  width: 85%;
   align-self: flex-start;
 }
 
@@ -419,7 +444,7 @@ h3{
  
 }
 
-@media (max-width: 400px) {
+@media (max-width: 25rem) {
   nav {
     flex-direction: column;
     max-width: 100%;
@@ -440,7 +465,7 @@ h3{
   
 }
 
-@media (max-width: 970px) {
+@media (max-width: 60.625rem) {
   
 
   .project{
@@ -454,3 +479,106 @@ h3{
   
 }
 
+@media (max-width: 20rem) {
+  
+
+  h1{
+    font-size: 3rem;
+  }
+
+  .project{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+  }
+
+  .project a{
+    width: 50%;
+    font-size: 0.8rem;
+  }
+
+  .img{
+    max-width: 95%;
+    height: auto;
+  }
+  .project img{
+    max-width: 95%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    
+  }
+
+  .project h3{
+    font-size: 2rem;
+  }
+
+  .project h4{
+    font-size: 1rem;
+  }
+
+  .project p{
+    font-size: 1rem;
+  }
+  
+  h2{
+    font-size: 2rem;
+    max-width: 95%;
+  }
+
+  p, li{
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 48.688rem) {
+  .project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    
+
+  }
+
+  img{
+    max-width: 90%;
+    height: auto;
+    align-self: center;
+  }
+  .project-description{
+    align-items: center;
+  }
+
+  .project a{
+    width: 40%;
+  }
+
+  .project img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 29.375rem) {
+  
+  h1{
+    font-size: 3rem;
+  }
+
+  .title p{
+    font-size: 1.5rem;
+  }
+}
+
+figcaption{
+  color: white;
+  margin-top: 0.5rem;
+  font-family: 'Montserrat';
+  text-align: center;
+
+}
