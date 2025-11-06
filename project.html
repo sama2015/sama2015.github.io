@@ -4,9 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Music Masters – Project</title>
+  <title>Project</title>
   <link href="css/main.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -15,7 +18,6 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="project.html">Project</a>
-      <!-- <a href="#">Resume</a> -->
     </nav>
   </header>
 
@@ -27,7 +29,7 @@
   <section class="about-section">
     <h2>Overview</h2>
     <p><strong>Music Masters</strong> is a fictional online guitar shop created for a Web Design and Development course project. Our goal was to build a responsive site using HTML, CSS, and JavaScript, offering a catalog of guitars and accessories. The site emphasizes user experience and product clarity.</p>
-    <a href ="https://pages.github.sfu.ca/iat339/MusicMasters_P2/" class ="img-link"> <img src ="images/music-masters.png" alt = "wireframe-image" width =800px" height = "600px"></a>
+    <a href ="https://pages.github.sfu.ca/iat339/MusicMasters_P2/" class ="img-link" target="_blank"> <img src ="images/music-masters.png" alt = "wireframe-image" width ="800" height = "600"></a>
   </section>
 
   <section class="context-section">
@@ -51,15 +53,15 @@
     <h3>Initial Iteration</h3>
     <p>I led the wireframe creation in Figma, drafting the structure for the homepage, product page, and contact section. After team feedback, I refined spacing, visuals, and hierarchy for better clarity.</p>
     <div class ="wireframe-images">
-      <img class ="product-wireframe" alt ="Product Page Wireframe" src = "images/Products Page.png" loading ="lazy" width ="300px" height="564.65px">
+      <img class ="product-wireframe" alt ="Product Page Wireframe" src = "images/products_wireframe.png" loading ="lazy" width ="300" height="564">
 
-      <img src = "images/Contact Page.png" alt ="Contact Page Wireframe" loading ="lazy" width ="300px" height="257.29px">
+      <img src = "images/contact_wireframe.png" alt ="Contact Page Wireframe" loading ="lazy" width ="300" height="257">
 
-      <img src = "images/Home Page.png" alt ="Home Page Wireframe" loading ="lazy" width ="300px" height="257.29px">
+      <img src = "images/home_wireframe.png" alt ="Home Page Wireframe" loading ="lazy" width ="300" height="257">
   
-      <img class ="bottom-wireframe" alt ="About Page Wireframe" src = "images/Contact Page (1).png" loading ="lazy" width ="300px" height="257.14px">
+      <img class ="bottom-wireframe" alt ="About Page Wireframe" src = "images/about_wireframe.png" loading ="lazy" width ="300" height="257">
   
-      <img class ="bottom-wireframe" alt ="Styleguide Wireframe" src = "images/Frame 2 (1).png" loading ="lazy" width ="300px" height="257.14px">
+      <img class ="bottom-wireframe" alt ="Styleguide Wireframe" src = "images/style_wireframe.png" loading ="lazy" width ="300" height="257">
   
       </div>
 
@@ -67,11 +69,44 @@
       <p>For the final website, we decided to use solid colors for more visual consistency and easier readability for users.</p>
 
       <div class ="final-images">
-      <img src = "images/final_layout1.png" alt ="Music Masters Home Page" loading ="lazy" width ="600px" height="339.68px">
+        <h4>Before</h4>
+        <h4>After</h4>
 
-      <img src = "images/final_layout2.png" alt ="Music Masters Product Page Filter Bar" loading ="lazy" width ="600px" height="339.68px">
+        <figure>
+      <img src = "images/oldSite.png" alt = "Website with old colour scheme"
+        loading = "lazy" width = "600" height = "339">
+        <figcaption>Original layout and gradient color scheme. Got feedback that gradient colors made visibility for navigation buttons worse</figcaption>
+        </figure>
 
-      <img src = "images/final_layout3.png" alt ="Music Masters Product Page product layout" loading ="lazy" width ="600px" height="339.68px">
+        <figure>
+      <img src = "images/final_layout1.png" alt ="Music Masters Home Page" loading ="lazy" width ="600" height="339">
+      <figcaption>Made color scheme solid to make layout consistent and improve visibility</figcaption>
+
+        </figure>
+
+      <figure>
+      <img src = "images/oldSite3.png" alt = "Website with old colour scheme"loading = "lazy" width = "600" >
+      <figcaption>Products page had sections for different guitar types. After testing, found it was hard to navigate between sections</figcaption>
+
+      </figure>
+
+      <figure>
+      <img src = "images/final_layout2.png" alt ="Music Masters Product Page Filter Bar" loading ="lazy" width ="600" height="339">
+      <figcaption>Added filter bars to make it easier to navigate to sections without scrolling</figcaption>
+
+      </figure>
+
+      <figure>
+      <img src = "images/oldSite2.png" alt = "Website with old colour scheme"loading = "lazy" width = "600" >
+      <figcaption>Original layout and gradient color scheme</figcaption>
+
+      </figure>
+      
+      <figure>
+      <img src = "images/final_layout3.png" alt ="Music Masters Product Page product layout" loading ="lazy" width ="600">
+      <figcaption>Original layout and gradient color scheme</figcaption>
+
+      </figure>
 
         </div>
 
@@ -79,7 +114,7 @@
       <p>I also designed the footer using Flexbox so that when the screen shrank, it would wrap the content.</p>
     <div class ="styleguide">
       
-      <img src = "gifs/responsiveness.gif" alt ="Footer shrinking on screen" loading ="lazy" width ="900px" height="280.95px">
+      <img src = "gifs/responsiveness.gif" alt ="Footer shrinking on screen" loading ="lazy" width ="900" height="280">
     </div>
 
     
@@ -87,13 +122,12 @@
       <p>Added hover effect animations to the footer links so that users would understand it can be interacted with and clicked. </p>
     <div class ="styleguide">
       
-      <img src = "gifs/hover-animation.gif" alt ="Hovering on footer links" loading ="lazy" width ="900px" height="280.95px">
+      <img src = "gifs/hover-animation.gif" alt ="Hovering on footer links" loading ="lazy" width ="900" height="280">
 
 
       </div>
-   </section>
-
   </section>
+
 
   <section class="about-section">
     <h2>Final Outcome</h2>
@@ -101,9 +135,9 @@
     <p>The final site was fully responsive, visually consistent, and supported smooth interaction across desktops, tablets, and phones. Our user testing confirmed ease of navigation and positive aesthetic feedback.</p>
       
     <div class = "final-outcome">
-    <img src = "gifs/final-website1.gif" alt ="Music Masters Home Page shrinking" loading ="lazy" width ="900px" height="509.18px">
+    <img src = "gifs/final-website1.gif" alt ="Music Masters Home Page shrinking gif" loading ="lazy" width ="900" height="509">
 
-    <img src = "gifs/final-website2.gif" alt ="Interacting with filter bar on Music Masters Product Page" loading ="lazy" width ="900px" height="509.18px">
+    <img src = "gifs/final-website2.gif" alt ="Interacting with filter bar on Music Masters Product Page gif" loading ="lazy" width ="900" height="509">
   </div>
 
 
@@ -122,7 +156,7 @@
 
   <footer>
     <div class ="contact-info">
-      <h4>Contact</h4>
+      <h3>Contact</h3>
       <p>Email: <a href="mailto:saa153@sfu.ca">saa153@sfu.ca</a> </p>
      <p> Phone: <a href="tel:604-701-3214">604-701-3214</a></p>
      </div>
