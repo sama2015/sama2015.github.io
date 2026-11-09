@@ -1,108 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>P3-Home</title>
-  <link href="css/main.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
-
-
-  <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
-
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sam Aminjavaheri | Digital Designer</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎨%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-        <a href ="index.html">Home</a>
-        <a href ="about.html">About</a>
-        <div class="dropdown">
-          <button class="dropbtn">Projects</button>
-          <div class="dropdown-content">
-            <a href="project.html">Music Masters</a>
-            <a href="project2.html">Acuva Brand Book</a>
-          </div>
-        </div>
 
-          
-    </nav>
-  </header>
-
-  <section class = "title">
-    <h1>Sam Aminjavaheri</h1>
-    <p>Web Designer</p>
-  </section>
-
-  <section class = "about-section">
-    <h2>About</h2>
-    
-    <p>My name is Sam Aminjavaheri, and my area of focus is Web Design. I aim to create layouts and interfaces that are appealing and are clear for users to understand and navigate.
-    </p>
-
-    <a class ="button" href = "about.html">Learn More</a>
-
-
-  </section>
-
-  <section class ="project-section">
-    <h2>Projects</h2>
-    <div class = "project">
-
-      <div class ="project-description">
-      <h3>Music Masters </h3>
-      <h4>Web Design</h4>
-  
-      <p>Designed a website that sells guitars and additional gear. Created to be accessible to as many users as possible.</p>
-      <a class ="button" href = "project.html">Click to View -&gt</a>
-      
-  
+<nav aria-label="Main">
+  <a class="pill" href="#home" data-r="home">Home</a>
+  <a class="pill" href="#about">About</a>
+  <div class="dd">
+    <button class="pill" id="ddbtn" aria-expanded="false" aria-controls="ddmenu">Projects ▾</button>
+    <div class="menu" id="ddmenu">
+      <a class="pill" href="#music-masters" data-r="music-masters">Music Masters</a>
+      <a class="pill" href="#acuva" data-r="acuva">Acuva Brand Book</a>
+      <a class="pill" href="#yres" data-r="yres">YRES Web Design</a>
     </div>
-
-    <img src ="images/music-masters.png" alt = "Mockup of website on computer" loading ="lazy" width ="800" height = "533">
-
   </div>
+  <a class="pill" href="#resume" data-r="resume">Resume</a>
+</nav>
 
-  <div class = "project">
-
-    <div class ="project-description">
-    <h3>Acuva Brand Book </h3>
-    <h4>Graphic Design</h4>
-
-    <p>Rebranded an existing company, making a new logotype, business cards, and letterhead. 
-
-    </p>
-    <a class ="button" href = "project2.html">Click to View -&gt</a>
-    
-
-  </div>
-
-  <img src ="images/Screenshot 2025-12-16 at 2.54.02 PM.png" alt = "Mockup of website on computer" loading ="lazy" width ="800" height = "533">
-
+<!-- HOME -->
+<div class="view" id="view-home">
+  <header class="hero">
+    <div class="wrap">
+      <h1>I design digital experiences<br>that look good and work well.</h1>
+      <p>I’m <strong>Sam Aminjavaheri</strong>, a digital designer working across <strong>UX/UI, graphic design, digital marketing, and front-end development.</strong></p>
+      <p>I combine visual design, user-centered thinking, and technology to create digital experiences and campaigns that are clear, engaging, and purposeful.</p>
+    </div>
+  </header>
+  <section class="s" id="sec-about"><div class="wrap about">
+    <div class="about-text"><h2>About Me</h2>
+      <p>I’m interested in the space where design, technology, and communication meet.</p>
+      <p>Whether I’m designing an interface, developing a visual identity, or building a responsive website, I enjoy turning ideas into experiences that are clear, functional, and visually engaging.</p></div>
+    <img class="photo" style="object-fit:cover;padding:0" src="images/sam-aminjavaheri-in-a-navy-suit.jpg" alt="Sam Aminjavaheri in a navy suit">
+  </div></section>
+  <section class="s" style="padding-top:10px"><div class="wrap"><h2>Skills</h2>
+    <div class="skills">
+      <div><h3>Design &amp; Tools</h3><ul><li>Figma</li><li>Photoshop</li><li>Illustrator</li><li>InDesign</li><li>Graphic Design</li><li>UX/UI Design</li><li>Branding Design</li><li>Canva</li><li>Typography</li></ul></div>
+      <div><h3>Web Development</h3><ul><li>HTML/CSS</li><li>Javascript</li><li>React</li><li>Responsive Design</li><li>WCAG Guidelines</li><li>Wix CMS</li></ul></div>
+      <div><h3>Marketing &amp; AI Tools</h3><ul><li>Social Media Management</li><li>Digital Marketing</li><li>Microsoft Suite</li><li>Chat GPT</li><li>Claude</li><li>Gemini</li><li>Copywriting</li><li>Content Strategy</li><li>Google Workspace</li></ul></div>
+    </div></div></section>
+  <section class="s" id="sec-projects"><div class="wrap"><h2>Projects</h2>
+    <div class="grid">
+      <article class="card"><img class="thumb" src="images/music-masters-website-on-a-desktop-monitor-card.jpg" alt="Music Masters website on a desktop monitor"><h3>Music Masters</h3><p>Designed a website that sells guitars and additional gear. Created to be accessible to as many users as possible.</p><a class="btn" href="#music-masters">View</a></article>
+      <article class="card"><img class="thumb" src="images/acuva-logotype-on-a-water-bottle-and-a-building-card.jpg" alt="Acuva logotype on a water bottle and a building"><h3>Acuva Brand Book</h3><p>Rebranded an existing water filtering company, Acuva, making a new logotype, business cards, and letterhead.</p><a class="btn" href="#acuva">View</a></article>
+      <article class="card"><img class="thumb" src="images/redesigned-volunteer-fair-landing-page-card.jpg" alt="Redesigned Volunteer Fair landing page"><h3>YRES Web Design</h3><p>Redesigned a Volunteer Fair landing page and designed a promotional newsletter for summer camps as a remote design volunteer.</p><a class="btn" href="#yres">View</a></article>
+    </div></div></section>
 </div>
-  </section>
 
- 
-    <footer>
+<!-- MUSIC MASTERS -->
+<div class="view" id="view-music-masters"><div class="wrap narrow article">
+  <a class="back" href="#home">← Back to home</a>
+  <h1 style="font-size:clamp(2.2rem,6vw,3.4rem);margin:14px 0 8px">Music Masters</h1>
+  <span class="tag">Web Design</span>
+  <img class="ph-hero" src="images/music-masters-website-on-a-desktop-monitor.jpg" alt="Music Masters website on a desktop monitor">
 
-      <div class ="contact-info">
-        <h3>Contact</h3>
-        <p>Email: <a href="mailto:saa153@sfu.ca">saa153@sfu.ca</a> </p>
-       <p> Phone: <a href="tel:604-780-1693">604-780-1693</a></p>
-       </div>
-        <div class ="line"></div>
-   
-        <p class ="copyright-footer"> Copyright ©2025 Sam Aminjavaheri. All Rights Reserved.</p> 
-    </footer>
-  <script data-goatcounter="https://sama2015.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+  <h2>Overview</h2>
+  <p><b>Music Masters</b> is a fictional online guitar shop created for a Web Design and Development course project. Our goal was to build a responsive site using HTML, CSS, and JavaScript, offering a catalog of guitars and accessories. The site emphasizes user experience and product clarity.</p>
+  <p><a class="btn" href="https://pages.github.sfu.ca/iat339/MusicMasters_P2/" target="_blank" rel="noopener">Visit live site</a></p>
+
+  <h2>Context, Skills, and Tools</h2>
+  <div class="meta">
+    <div><b>Tools</b>Figma, HTML5, CSS3, JavaScript</div>
+    <div><b>Type</b>Academic project (IAT 339)</div>
+    <div><b>Date</b>June–July 2025</div>
+    <div><b>Team</b>Sam (myself), Muhammad Junaid</div>
+    <div><b>Role</b>UX Designer, Front-End Developer</div>
+  </div>
+
+  <h2>Problem / Objective</h2>
+  <p>We aimed to design a professional, easy-to-use website for selling guitars online. Many competitors had cluttered interfaces or limited mobile usability, so our challenge was to create a clean and responsive experience across devices.</p>
+
+  <h2>Design and Iteration</h2>
+  <h3>Initial iteration</h3>
+  <p>I led the wireframe creation in Figma, drafting the structure for the homepage, product page, and contact section. After team feedback, I refined spacing, visuals, and hierarchy for better clarity.</p>
+  <div class="cols" style="--n:3"><div class="stack"><figure><img class="shot" loading="lazy" src="images/home-page-wireframe.jpg" alt="Home page wireframe"></figure><figure><img class="shot" loading="lazy" src="images/about-page-wireframe.jpg" alt="About page wireframe"></figure></div><div class="stack"><figure><img class="shot" loading="lazy" src="images/products-page-wireframe.jpg" alt="Products page wireframe"></figure></div><div class="stack"><figure><img class="shot" loading="lazy" src="images/contact-page-wireframe.jpg" alt="Contact page wireframe"></figure><figure><img class="shot" loading="lazy" src="images/style-guide-wireframe.jpg" alt="Style guide wireframe"></figure></div></div><h3>Style guide</h3><p>I put together a style guide so fonts, colours, buttons, form fields, and imagery stayed consistent across every page.</p><div class="cols" style="--n:2"><div class="stack"><figure><img class="shot" loading="lazy" src="images/style-guide-page-1.jpg" alt="Style guide page 1"></figure><figure><img class="shot" loading="lazy" src="images/style-guide-page-2.jpg" alt="Style guide page 2"></figure><figure><img class="shot" loading="lazy" src="images/style-guide-page-3.jpg" alt="Style guide page 3"></figure><figure><img class="shot" loading="lazy" src="images/style-guide-page-4.jpg" alt="Style guide page 4"></figure></div><div class="stack"><figure><img class="shot" loading="lazy" src="images/style-guide-page-5.jpg" alt="Style guide page 5"></figure><figure><img class="shot" loading="lazy" src="images/style-guide-page-6.jpg" alt="Style guide page 6"></figure><figure><img class="shot" loading="lazy" src="images/style-guide-page-7.jpg" alt="Style guide page 7"></figure></div></div>
+
+  <h3>Website iteration</h3>
+  <p>For the final website, we decided to use solid colors for more visual consistency and easier readability for users.</p>
+  <div class="ba">
+    <div><h4>Before</h4><img class="shot" loading="lazy" src="images/old-music-masters-home-page-with-gradient-colours.jpg" alt="Old Music Masters home page with gradient colours"><p>Gradient colors made the navigation buttons harder to see.</p></div>
+    <div><h4>After</h4><img class="shot" loading="lazy" src="images/final-music-masters-home-page.jpg" alt="Final Music Masters home page"><p>Made the color scheme solid to keep the layout consistent and improve visibility.</p></div>
+    <div><img class="shot" loading="lazy" src="images/old-products-page.jpg" alt="Old products page"><p>The products page had sections for different guitar types. After testing, it was hard to navigate between sections.</p></div>
+    <div><img class="shot" loading="lazy" src="images/final-products-page-with-filter-bar.jpg" alt="Final products page with filter bar"><p>Added filter bars so users can jump to sections without scrolling.</p></div><div><img class="shot" loading="lazy" src="images/old-product-layout-with-gradient-colours.jpg" alt="Old product layout with gradient colours"><p>Original product layout on the gradient colour scheme.</p></div><div><img class="shot" loading="lazy" src="images/final-product-layout.jpg" alt="Final product layout"><p>Final product cards on solid colours, with a clearer price and buttons.</p></div>
+  </div>
+
+  <h3>Responsiveness</h3>
+  <p>I designed the footer using Flexbox so the content wraps when the screen shrinks.</p>
+  <img class="shot" loading="lazy" src="images/responsiveness.gif" alt="Animation of the footer wrapping as the screen shrinks">
+  <h3>Hover effect</h3>
+  <p>Added hover animations to the footer links so users understand they can be clicked.</p>
+  <img class="shot" loading="lazy" src="images/hover-animation.gif" alt="Animation of hover effect on footer links">
+
+  <h2>Final Outcome</h2>
+  <p>The final site was fully responsive, visually consistent, and supported smooth interaction across desktops, tablets, and phones. Our user testing confirmed ease of navigation and positive aesthetic feedback.</p>
+  <div class="gal" style="grid-template-columns:1fr"><img class="shot" loading="lazy" src="images/final-website1.gif" alt="Animation of the Music Masters home page resizing across screen sizes"><img class="shot" loading="lazy" src="images/final-website2.gif" alt="Animation of the filter bar on the Music Masters products page"></div>
+
+  <h2>Takeaways</h2>
+  <p>This project helped me develop a deeper understanding of how design and development choices affect user experience. Through wireframing and iteration, I learned the importance of planning before coding, especially how early structure can prevent issues later in the process. Designing in Figma let me quickly test ideas and share them with my team, leading to faster and more confident design decisions.</p>
+  <p>On the development side, building responsive layouts with Flexbox taught me how to make flexible components that adapt to different screen sizes. I also gained experience improving interactivity through hover states and subtle animations, which enhance usability without overwhelming the user.</p>
+  <p>Another key takeaway was the importance of consistency in branding and structure. Keeping fonts, colors, and layout patterns unified across the site made the interface feel more polished and professional. Small details like padding and alignment can significantly change how users perceive a website.</p>
+
+  <div class="pn"><a class="btn" href="#home">← Home</a><a class="btn" href="#acuva">Next: Acuva Brand Book →</a></div>
+</div></div>
+
+<!-- ACUVA -->
+<div class="view" id="view-acuva"><div class="wrap narrow article">
+  <a class="back" href="#home">← Back to home</a>
+  <h1 style="font-size:clamp(2.2rem,6vw,3.4rem);margin:14px 0 8px">Acuva Brand Book</h1>
+  <span class="tag">Graphic Design</span>
+  <img class="ph-hero" src="images/acuva-logotype-on-a-water-bottle-and-a-building-billboa.jpg" alt="Acuva logotype on a water bottle and a building billboard">
+
+  <h2>Overview</h2>
+  <p><b>Acuva Brand Book</b> is a brand book project where we chose the water filtering company Acuva and rebranded it.</p>
+
+  <h2>Context, Skills, and Tools</h2>
+  <div class="meta">
+    <div><b>Tools</b>Illustrator, InDesign, Photoshop</div>
+    <div><b>Type</b>Academic project (IAT 102)</div>
+    <div><b>Date</b>Mar–Apr 2023</div>
+    <div><b>Team</b>Sam (myself)</div>
+    <div><b>Role</b>Graphic Designer</div>
+  </div>
+
+  <h2>Problem / Objective</h2>
+  <p>The objective was to make a logotype that represents the values of Acuva, a company that creates technology to purify water. Along with this, we created a brand book showing the logotype on products, letterheads and business cards, along with logotype variations and brochures.</p>
+
+  <h2>Process</h2>
+  <h3>Logotype ideation</h3>
+  <ul><li>Created a mind map to get ideas on what to convey with the logotype and what the company does.</li><li>Drew different logotypes that could convey the company’s values.</li></ul>
+  <img class="shot" loading="lazy" src="images/mind-map-and-logotype-sketches.jpg" alt="Mind map and logotype sketches">
+  <h3>Refined version</h3>
+  <ul><li>Sketched layouts for business cards and letterheads.</li></ul>
+  <div class="gal"><figure><img class="shot" loading="lazy" src="images/acuva-business-card-front-and-back.jpg" alt="Acuva business card, front and back"></figure><figure><img class="shot" loading="lazy" src="images/acuva-letterhead.jpg" alt="Acuva letterhead"></figure></div>
+  <h3>Logotype variations</h3>
+  <ul><li>Chose colour schemes based on different color wheels to match Acuva’s themes of water and technology.</li></ul>
+  <img class="shot" loading="lazy" src="images/acuva-logotype-colour-variations-monochrome-analogous-t.jpg" alt="Acuva logotype colour variations: monochrome, analogous, triadic, complementary">
+  <h3>Applying to the logotype</h3>
+  <ul><li>Applied these colors as individual layers to create each logotype, using InDesign.</li></ul>
+  <img class="shot" loading="lazy" src="images/final-acuva-logotype.jpg" alt="Final Acuva logotype">
+
+  <h2>Final Outcome</h2>
+  <p>The result was a brand book containing relevant information about the company, along with the process behind the deliverables: the logotype, business cards, and letterhead.</p>
+  <div class="bb" id="bb"><button class="bbt" type="button" data-i="0" aria-label="Open brand book page 1"><img loading="lazy" src="images/brand-book-page-1.webp" alt="Brand book page 1"><span>1</span></button><button class="bbt" type="button" data-i="1" aria-label="Open brand book page 2"><img loading="lazy" src="images/brand-book-page-2.webp" alt="Brand book page 2"><span>2</span></button><button class="bbt" type="button" data-i="2" aria-label="Open brand book page 3"><img loading="lazy" src="images/brand-book-page-3.webp" alt="Brand book page 3"><span>3</span></button><button class="bbt" type="button" data-i="3" aria-label="Open brand book page 4"><img loading="lazy" src="images/brand-book-page-4.webp" alt="Brand book page 4"><span>4</span></button><button class="bbt" type="button" data-i="4" aria-label="Open brand book page 5"><img loading="lazy" src="images/brand-book-page-5.webp" alt="Brand book page 5"><span>5</span></button><button class="bbt" type="button" data-i="5" aria-label="Open brand book page 6"><img loading="lazy" src="images/brand-book-page-6.webp" alt="Brand book page 6"><span>6</span></button><button class="bbt" type="button" data-i="6" aria-label="Open brand book page 7"><img loading="lazy" src="images/brand-book-page-7.webp" alt="Brand book page 7"><span>7</span></button><button class="bbt" type="button" data-i="7" aria-label="Open brand book page 8"><img loading="lazy" src="images/brand-book-page-8.webp" alt="Brand book page 8"><span>8</span></button><button class="bbt" type="button" data-i="8" aria-label="Open brand book page 9"><img loading="lazy" src="images/brand-book-page-9.webp" alt="Brand book page 9"><span>9</span></button><button class="bbt" type="button" data-i="9" aria-label="Open brand book page 10"><img loading="lazy" src="images/brand-book-page-10.webp" alt="Brand book page 10"><span>10</span></button><button class="bbt" type="button" data-i="10" aria-label="Open brand book page 11"><img loading="lazy" src="images/brand-book-page-11.webp" alt="Brand book page 11"><span>11</span></button><button class="bbt" type="button" data-i="11" aria-label="Open brand book page 12"><img loading="lazy" src="images/brand-book-page-12.webp" alt="Brand book page 12"><span>12</span></button><button class="bbt" type="button" data-i="12" aria-label="Open brand book page 13"><img loading="lazy" src="images/brand-book-page-13.webp" alt="Brand book page 13"><span>13</span></button><button class="bbt" type="button" data-i="13" aria-label="Open brand book page 14"><img loading="lazy" src="images/brand-book-page-14.webp" alt="Brand book page 14"><span>14</span></button><button class="bbt" type="button" data-i="14" aria-label="Open brand book page 15"><img loading="lazy" src="images/brand-book-page-15.webp" alt="Brand book page 15"><span>15</span></button><button class="bbt" type="button" data-i="15" aria-label="Open brand book page 16"><img loading="lazy" src="images/brand-book-page-16.webp" alt="Brand book page 16"><span>16</span></button><button class="bbt" type="button" data-i="16" aria-label="Open brand book page 17"><img loading="lazy" src="images/brand-book-page-17.webp" alt="Brand book page 17"><span>17</span></button><button class="bbt" type="button" data-i="17" aria-label="Open brand book page 18"><img loading="lazy" src="images/brand-book-page-18.webp" alt="Brand book page 18"><span>18</span></button><button class="bbt" type="button" data-i="18" aria-label="Open brand book page 19"><img loading="lazy" src="images/brand-book-page-19.webp" alt="Brand book page 19"><span>19</span></button><button class="bbt" type="button" data-i="19" aria-label="Open brand book page 20"><img loading="lazy" src="images/brand-book-page-20.webp" alt="Brand book page 20"><span>20</span></button><button class="bbt" type="button" data-i="20" aria-label="Open brand book page 21"><img loading="lazy" src="images/brand-book-page-21.webp" alt="Brand book page 21"><span>21</span></button><button class="bbt" type="button" data-i="21" aria-label="Open brand book page 22"><img loading="lazy" src="images/brand-book-page-22.webp" alt="Brand book page 22"><span>22</span></button><button class="bbt" type="button" data-i="22" aria-label="Open brand book page 23"><img loading="lazy" src="images/brand-book-page-23.webp" alt="Brand book page 23"><span>23</span></button><button class="bbt" type="button" data-i="23" aria-label="Open brand book page 24"><img loading="lazy" src="images/brand-book-page-24.webp" alt="Brand book page 24"><span>24</span></button><button class="bbt" type="button" data-i="24" aria-label="Open brand book page 25"><img loading="lazy" src="images/brand-book-page-25.webp" alt="Brand book page 25"><span>25</span></button></div><p class="ph-note" style="font-size:.85rem">Click a page to view it larger. Use the arrow keys or the buttons to move between pages.</p>
+
+  <h2>Takeaways</h2>
+  <p>This project gave me insight into the process of branding design, with an emphasis on ideation through mind maps, matrices, and drawing.</p>
+  <p>On the technical side, I learned how to create layouts and logos using InDesign and Illustrator, as well as kerning for my logotype.</p>
+  <p>Finally, it taught me the importance of user research. Researching the company’s goals and values informed my design decisions and made sure the design reflected the company’s identity.</p>
+
+  <div class="pn"><a class="btn" href="#music-masters">← Previous: Music Masters</a><a class="btn" href="#yres">Next: YRES Web Design →</a></div>
+</div></div>
+
+<!-- YRES -->
+<div class="view" id="view-yres"><div class="wrap narrow article">
+  <a class="back" href="#home">← Back to home</a>
+  <h1 style="font-size:clamp(2.2rem,6vw,3.4rem);margin:14px 0 8px">YRES Web Design</h1>
+  <span class="tag">Web Design · Email Design</span>
+  <img class="ph-hero" style="background:#0f3d45" src="images/top-of-the-redesigned-volunteer-fair-landing-page.jpg" alt="Top of the redesigned Volunteer Fair landing page">
+
+  <h2>Overview</h2>
+  <p>As a remote web design volunteer for York Regional Educational Services (YRES), I take on design tasks assigned to the virtual volunteer team. Two are shown here: a redesign of the Volunteer Fair landing page and a promotional email newsletter for YRES camps.</p>
+
+  <h2>Context, Skills, and Tools</h2>
+  <div class="meta">
+    <div><b>Tools</b>Figma, Canva</div>
+    <div><b>Type</b>Volunteer work (remote)</div>
+    <div><b>Date</b>May 2026</div>
+    <div><b>Organization</b>York Regional Educational Services</div>
+    <div><b>Role</b>Web Design Volunteer</div>
+  </div>
+
+  <h2>Volunteer Fair Landing Page</h2>
+  <p>The task was to create a clean, modern landing page mockup for one YRES program or event. It needed to be easy to understand and engaging for students, parents, and community members. I redesigned the Volunteer Fair page.</p>
+  <p><a class="btn" href="https://www.figma.com/design/HGokQ4wF8opV28HQw8nfUe/YRES-Redesign?node-id=13-2&amp;t=weVaGQ4yUWKzb53B-1" target="_blank" rel="noopener">View Figma design</a></p>
+  <h3>Design choices</h3>
+  <ul>
+    <li><b>Hero:</b> the main purpose of the fair in one sentence, with the key details (location and time) and sign-up buttons for attendees and sponsors.</li>
+    <li><b>What we do:</b> the key facts about the fair, taken from the digital brochures, set in four boxes so they are easier to read.</li>
+    <li><b>Past events:</b> highlights from previous volunteer events, to show the fair’s success.</li>
+    <li><b>Volunteer section:</b> a clear place for volunteers to sign up.</li>
+  </ul>
+  <div class="scrollbox" tabindex="0" role="region" aria-label="Full desktop mockup, scrollable"><img src="images/full-desktop-mockup-of-the-redesigned-volunteer-fair-la.jpg" alt="Full desktop mockup of the redesigned Volunteer Fair landing page"></div><p class="ph-note" style="font-size:.85rem">Scroll inside the frame to see the full page.</p>
+  <h3>From wireframe to final design</h3><p>I wireframed the layout first, then added colour, photography, and the content from the digital brochures.</p><div class="ba"><div><h4>Wireframe</h4><img class="shot" loading="lazy" src="images/wireframe-of-the-volunteer-fair-page.jpg" alt="Wireframe of the Volunteer Fair page"></div><div><h4>Final design</h4><img class="shot" loading="lazy" src="images/final-design-of-the-volunteer-fair-page.jpg" alt="Final design of the Volunteer Fair page"></div></div>
+
+  <h2>Camp Promotion Newsletter</h2>
+  <p>The task was to design a clean, eye-catching email newsletter promoting YRES programs, events, or volunteer opportunities. I chose to focus on the camps.</p>
+  <p><a class="btn" href="https://canva.link/e5yiimezsololek" target="_blank" rel="noopener">View newsletter in Canva</a></p>
+  <h3>Design choices</h3>
+  <ul>
+    <li>Included a brief description of the organization, followed by the upcoming camps.</li>
+    <li>Used bright colours to give it a newsletter feel while keeping the layout simple.</li>
+  </ul>
+  <img class="shot" style="max-width:520px;margin:14px auto" loading="lazy" src="images/camp-promotion-email-newsletter-with-an-intro-three-upc.jpg" alt="Camp promotion email newsletter with an intro, three upcoming camps, a Register Now button, and contact details">
+
+  <div class="pn"><a class="btn" href="#acuva">← Previous: Acuva Brand Book</a><a class="btn" href="#resume">Resume →</a></div>
+</div></div>
+
+<!-- RESUME -->
+<div class="view" id="view-resume"><div class="wrap narrow article">
+  <a class="back" href="#home">← Back to home</a>
+  <h1 style="font-size:clamp(2.2rem,6vw,3.4rem);margin:14px 0 8px">Resume</h1>
+  <p style="margin:0"><b>Sam Aminjavaheri</b> · Marketing &amp; Brand Communications</p>
+  <p style="margin:0"><a href="mailto:saa153@sfu.ca" style="text-decoration:underline">saa153@sfu.ca</a> · <a href="tel:6047801693" style="text-decoration:underline">604-780-1693</a> · West Vancouver, BC</p>
+
+  <h2>Marketing Experience</h2>
+  <div class="job"><h3>Social Media &amp; Digital Marketing Intern · Acadium (Remote)</h3><p class="when">May 2026 – Aug 2026</p><ul><li>Created and managed social media content across Instagram, TikTok, X, and Threads to support brand awareness and audience engagement.</li><li>Collaborated directly with the business owner to develop content aligned with brand goals, messaging, and audience needs.</li><li>Supported content ideation, editing, and AI-assisted workflows using ChatGPT to improve content development efficiency.</li><li>Tested website functionality and online course content, documenting issues and recommending improvements to strengthen the digital experience.</li></ul></div>
+  <div class="job"><h3>Web Design Volunteer · York Regional Educational Services (Remote)</h3><p class="when">Mar 2026 – Present</p><ul><li>Collaborated with stakeholders to update website content and strengthen digital communications for organizational audiences.</li><li>Maintained website content in Wix CMS, supporting clear messaging and consistent visual presentation.</li><li>Gathered stakeholder feedback and refined web content for clarity, accuracy, accessibility, and organizational goals.</li><li>Applied responsive design and accessibility principles to improve the experience across devices and audiences.</li></ul><p><a class="btn" href="#yres">View work samples</a></p></div>
+
+  <h2>Relevant Projects</h2>
+  <div class="job"><h3>Acuva Company Branding Book · Graphic Designer</h3><p class="when">Mar 2023 – Apr 2023 · Graphic Design course project</p><ul><li>Developed a visual identity for Acuva, including logo, typography, colour palette, and brand guidelines.</li><li>Designed marketing collateral using Adobe InDesign and Illustrator, producing a 25-page brand book for print and digital applications.</li><li>Established consistent visual standards across layouts to communicate the brand clearly and professionally.</li></ul><p><a class="btn" href="#acuva">View project</a></p></div>
+  <div class="job"><h3>Music Masters Product Website · Web Designer</h3><p class="when">Jun 2025 – Jul 2025 · IAT 339: Web Design and Development</p><ul><li>Designed and developed a responsive, multi-page product website to communicate product information clearly to prospective customers.</li><li>Created Figma wireframes and branded layouts to establish a consistent visual identity and user experience.</li><li>Translated product information into clear, accessible web content using responsive design and usability principles.</li></ul><p><a class="btn" href="#music-masters">View project</a></p></div>
+
+  <h2>Additional Experience</h2>
+  <div class="job"><h3>Base Operations · Grouse Mountain, North Vancouver, BC</h3><p class="when">Sep 2019 – Mar 2020</p><ul><li>Communicated with customers and team members in a fast-paced environment, responding to inquiries and supporting positive customer experiences.</li><li>Managed multiple responsibilities while maintaining organization, attention to detail, and adherence to service procedures.</li></ul></div>
+
+  <h2>Education</h2>
+  <div class="job"><h3>Bachelor of Arts, Interactive Arts &amp; Technology (SIAT)</h3><p class="when">Simon Fraser University, Burnaby, BC · Expected 2027</p>
+    <ul><li>Relevant coursework: Web Development, Internet Computing Technologies, Multimedia Programming, Interaction Design</li></ul></div>
+
+  <h2>Skills</h2>
+  <div class="job">
+   <p><b>Marketing &amp; Content:</b> Social Media Content Creation, Copywriting, Digital Marketing, Content Strategy, Marketing Communications, Audience Engagement, Visual Storytelling</p>
+   <p><b>Branding &amp; Design:</b> Brand Identity, Marketing Collateral, Canva, Adobe InDesign, Illustrator, Photoshop, Figma, Typography, Layout Design</p>
+   <p><b>Digital Communications:</b> Website Content Management, Wix CMS, Web Content Updates, Responsive Design, Accessibility, HTML, CSS, JavaScript</p>
+   <p><b>AI &amp; Technology:</b> ChatGPT, Gemini, AI-Assisted Content Creation, Prompt Development, Workflow Improvement</p>
+   <p style="margin-bottom:0"><b>Communication &amp; Tools:</b> Stakeholder Collaboration, Customer Service, Presentation Design, Microsoft 365 (Word, Excel, PowerPoint, Outlook, Teams), Google Workspace</p>
+  </div>
+</div></div>
+
+<footer>
+  <div class="wrap foot">
+    <div class="col"><h4>Email</h4><a href="mailto:saa153@sfu.ca">saa153@sfu.ca</a></div>
+    <div class="col"><h4>Phone Number</h4><a href="tel:6047801693">604-780-1693</a></div>
+    <div class="col"><h4>Home</h4><a href="#about">About Me</a><a href="#projects">Projects</a></div>
+    <div class="col"><h4>Projects</h4><a href="#music-masters">Music Masters</a><a href="#acuva">Acuva Brand Book</a><a href="#yres">YRES Web Design</a></div>
+    <div class="col"><h4><a href="#resume" style="font-size:1.1rem">Resume</a></h4></div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Brand book viewer"><img id="lbimg" alt=""><div class="ctl"><button class="pill" id="lbprev" type="button" aria-label="Previous page">←</button><span class="cnt" id="lbcnt"></span><button class="pill" id="lbnext" type="button" aria-label="Next page">→</button><button class="pill" id="lbclose" type="button">Close</button></div></div>
+<script src="script.js"></script>
 </body>
 </html>
